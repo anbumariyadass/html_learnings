@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tabe Tag Demo</title>
+        <link rel="stylesheet" href="/css/common.css" type="text/css">        
+    </head>
+    <body>
+        <a href="home.html">Home Page</a>
+        <hr>
+        <h1>My Activities for the day</h1>
+        <table border="1">
+            <caption>My daily schedule</caption>            
+            <thead>
+                <tr>
+                    <th scope="col">Time</th>
+                    <th scope="col">Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><time datetime="06:00">6am</time>-<time datetime="07:00">7am</time></td>
+                    <td>Get Ready</td>
+                </tr>
+                <tr>
+                    <td><time datetime="07:00">7am</time>-<time datetime="08:00">8am</time></td>
+                    <td>Prayer and Reading Books</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Break</td>
+                </tr>
+                <tr>
+                    <td><time datetime="10:00">10am</time>-<time datetime="18:00">6pm</time></td>
+                    <td>Work</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><time datetime="18:00">6pm</time>-<time datetime="21:00">9pm</time></td>
+                    <td>Shopping</td>
+                </tr>
+                <tr>
+                    <td>Watching TV</td>
+                </tr>
+                <tr>
+                    <td><time datetime="18:00">6pm</time>-<time datetime="21:00">9pm</time></td>
+                    <td>
+                        <table border="1">
+                            <caption>Table within table</caption>
+                            <tbody>
+                                <tr>
+                                    <td>Shopping</td>
+                                </tr>
+                                <tr>
+                                    <td>Watching TV</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">All good!</td>
+                </tr>                
+            </tfoot>
+        </table>
+        <hr>
+    </body>
+</html>
