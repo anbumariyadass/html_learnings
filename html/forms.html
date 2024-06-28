@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Interactive Forms</title>
+        <link rel="stylesheet" href="/css/common.css" type="text/css">        
+    </head>
+    <body>
+        <a href="home.html">Home Page</a>
+        <hr>
+        <header>
+            <h1>Interactive Forms Demo</h1>
+        </header>
+        <main>
+            <form action="https://httpbin.org/get" method="get">
+                <input type="hidden" name="hiddenField" value="my hidden value">
+                <fieldset>
+                    <legend>Your personal information</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="firstName">First Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="firstName" id="firstName" autofocus autocomplete="on"
+                                    placeholder="type your first name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="lastName">Last Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="lastName" id="lastName" 
+                                    placeholder="type your last name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="password">Password:</label>
+                            </td>
+                            <td>
+                                <input type="password" name="password" id="password" 
+                                    placeholder="type your password" required>
+                            </td>
+                        </tr>  
+                        <tr>
+                            <td>
+                                <label for="phoneNumber">Phone Number:</label>
+                            </td>
+                            <td>
+                                <input type="tel" name="phoneNumber" id="phoneNumber" 
+                                    placeholder="type your phone number" 
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                    required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="myFavDecade">decade</label>
+                            </td>    
+                            <td>
+                                <input type="number" name="myFavDecade" id="myFavDecade" 
+                                    value = 1990 step="10" min="1900" max="2020">
+                            </td>        
+                        </tr>                   
+                    </table>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Your education details</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="highestQualification">Highest Education Qualification</label>
+                            </td>
+                            <td>
+                                <select name="highestQualification" id="">
+                                    <optgroup label="School Education">
+                                        <option value="sslc">SSLC</option>
+                                        <option value="hsc">HSC</option>
+                                    </optgroup>
+                                    <optgroup label="Bachelor Degree">
+                                        <option value="ba">BA</option>
+                                        <option value="bca">BCA</option>
+                                        <option value="bcom">B.Com</option>
+                                        <option value="be">BE</option>
+                                        <option value="bsc">B.Sc</option>
+                                    </optgroup>
+                                    <optgroup label="Master Degree">
+                                        <option value="ma">MA</option>
+                                        <option value="mca" selected>MCA</option>
+                                        <option value="mcom">M.Com</option>
+                                        <option value="me">ME</option>
+                                        <option value="msc">M.Sc</option>
+                                    </optgroup>
+                                    <optgroup label="Philosophy">
+                                        <option value="mphil">M.Phil</option>
+                                        <option value="phd">Phd</option>
+                                    </optgroup>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="languagesKnown">Languages Known</label>
+                            </td>
+                            <td>
+                                <select name="languagesKnown" id="languagesKnown" multiple size="2">                                    
+                                    <option value="english">English</option>
+                                    <option value="hindi">Hindi</option>
+                                    <option value="malayalam">Malayalam</option>                                    
+                                    <option value="tamil">Tamil</option>
+                                    <option value="telugu">Telugu</option>                                    
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="country">Country</label>
+                            </td>
+                            <td>
+                                <input type="text" name="country" id="country" list="country-list">
+                                <datalist id="country-list">
+                                    <option value="India">
+                                    <option value="Srilanka">
+                                    <option value="UAE">   
+                                    <option value="UK">    
+                                    <option value="USA">       
+                            </td>
+                        </tr>
+                    </table>                    
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Your favourites</legend>
+                </fieldset>
+                <br>
+                <table>                   
+                    <tr>
+                        <button type="submit">Submit</button>&nbsp;&nbsp;
+                        <button type="reset">Reset</button>
+                    </tr>
+                </table>
+            </form>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
